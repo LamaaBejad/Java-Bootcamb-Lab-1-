@@ -66,9 +66,9 @@ public class Main {
         System.out.println("input a word");
         input.nextLine(); // skip the leftover Enter from the last nextInt()
         String word = input.nextLine();
-        String reversed = "";
+        StringBuilder reversed = new StringBuilder();
         for (int i = word.length() - 1; i >= 0; i--) {
-            reversed += word.charAt(i);
+            reversed.append(word.charAt(i));
         }
         System.out.println("Reversed word: " + reversed);
 
